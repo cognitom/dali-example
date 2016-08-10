@@ -18,7 +18,7 @@
           return response.text()
         })
         .then(function(body){
-          self.response = body
+          self.update({ response: body })
         })
     }
     turnOff(e) {
@@ -27,7 +27,7 @@
           return response.text()
         })
         .then(function(body){
-          self.response = body
+          self.update({ response: body })
         })
     }
   </script>
